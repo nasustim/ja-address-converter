@@ -11,9 +11,8 @@
     "test:ci": "npm run test run",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "__base_prettier": "prettier \"**/*.{tsx,ts,jsx,js}\" --ignore-path=./.gitignore",
-    "prettier": "npm run _base_prettier --check",
-    "prettier:format": "npm run _base_prettier --write"
+    "prettier": "prettier \"**/*.{tsx,ts,jsx,js}\" --ignore-path=./.gitignore --check",
+    "prettier:format": "prettier \"**/*.{tsx,ts,jsx,js}\" --ignore-path=./.gitignore --write"
   },
   "dependencies": {
     "next": "14.0.1",
