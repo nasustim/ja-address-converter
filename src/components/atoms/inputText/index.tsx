@@ -1,1 +1,1 @@
-export const InputText = () => <input type="text" />
+export const InputText = () => <input type="text" />;
