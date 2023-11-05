@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "echo \"please write test\" && exit 0"
+    "test": "vitest",
+    "test:ci": "npm run test run"
   },
   "dependencies": {
     "next": "14.0.1",
@@ -15,12 +16,15 @@
     "react-dom": "^18"
   },
   "devDependencies": {
+    "@testing-library/react": "^14.0.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@vitejs/plugin-react": "^4.1.1",
     "autoprefixer": "^10.0.1",
     "eslint": "^8",
     "eslint-config-next": "14.0.1",
+    "jsdom": "^22.1.0",
     "postcss": "^8",
     "tailwindcss": "^3.3.0",
     "typescript": "^5",
