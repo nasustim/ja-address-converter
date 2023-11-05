@@ -7,22 +7,42 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "echo \"please write test\" && exit 0"
+    "test": "vitest",
+    "test:ci": "npm run test run",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "prettier": "prettier \"**/*.{tsx,ts,jsx,js}\" --ignore-path=./.gitignore --check",
+    "prettier:format": "prettier \"**/*.{tsx,ts,jsx,js}\" --ignore-path=./.gitignore --write"
   },
   "dependencies": {
+    "next": "14.0.1",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "14.0.1"
+    "react-dom": "^18"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@storybook/addon-essentials": "^7.5.2",
+    "@storybook/addon-interactions": "^7.5.2",
+    "@storybook/addon-links": "^7.5.2",
+    "@storybook/addon-onboarding": "^1.0.8",
+    "@storybook/blocks": "^7.5.2",
+    "@storybook/nextjs": "^7.5.2",
+    "@storybook/react": "^7.5.2",
+    "@storybook/testing-library": "^0.2.2",
+    "@testing-library/react": "^14.0.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@vitejs/plugin-react": "^4.1.1",
     "autoprefixer": "^10.0.1",
-    "postcss": "^8",
-    "tailwindcss": "^3.3.0",
     "eslint": "^8",
-    "eslint-config-next": "14.0.1"
+    "eslint-config-next": "14.0.1",
+    "eslint-plugin-storybook": "^0.6.15",
+    "jsdom": "^22.1.0",
+    "postcss": "^8",
+    "prettier": "3.0.3",
+    "storybook": "^7.5.2",
+    "tailwindcss": "^3.3.0",
+    "typescript": "^5",
+    "vitest": "^0.34.6"
   }
 }
